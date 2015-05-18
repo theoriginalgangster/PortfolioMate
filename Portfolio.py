@@ -50,7 +50,7 @@ class Portfolio:
 		for company in self.companies:
 			print ('{0: <10}'.format(str(company.ticker+":"))+'{0: <10}'.format("%.2f"%company.mu)+'{0: <10}'.format("%.2f"%company.stdDev)+'{0: <10}'.format(str(company.loadedStartDate.year))+'{0: <10}'.format(str(company.loadedEndDate.year)))	
 		print("minDate: "+str(self.minDate)) 	
-	def testReturnMinDateRandomTrial(self, trialId):
+	def returnMinDateRandomTrial(self, trialId):
 		# create trial object
 		trial = Trial(trialId)	
 		# create trial variables	
@@ -67,7 +67,7 @@ class Portfolio:
 		trial.setReturnList(trialReturnList)
 		trial.calcRiskReturn()	
 		return trial	
-	def testGenerateMinDatePointTrial(self, points): 
+	def generateMinDatePointTrial(self, points): 
 		# creates points randomized portoflio wights and returns them. 
 		# i.e., if points == 100, there will be 100 trails for portfolios,
 		# all with different weights and the total risk and return. 
@@ -107,7 +107,7 @@ port.loadCompany("YHOO")
 port.loadCompany("EBAY")
 port.calcNorm()
 port.printOverview()
-port.testGenerateMinDatePointTrial(3000)
+port.generateMinDatePointTrial(5000)
 '''
 fb = Company("FB")
 fb.loadTicker()
