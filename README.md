@@ -2,7 +2,7 @@
 
 This program is designed to run my own database of securities prices and mostly uses adjusted closing prices. 
 
-Although this project is still a work in progress and does not yet use quadratic constrain optimization, it is, however, still able to create a visibile efficient frontier for back-testing of specified stocks between a certain date range. Although my own database is necessary for this code to work, the SQL in the database handle should allow you create a sample databse yourself. 
+Although this project is still a work in progress and does not yet use quadratic constrain optimization, it is, however, still able to create a visibile efficient frontier for back-testing of specified stocks between a certain date range. Although my own database is necessary for this code to work, the SQL associated with the database handle should give enough information to allow you create a sample databse yourself. 
 
 My own data was additionally scraped from EDGAR but is not required for running the backtesting seen in the image bellow. 
 
