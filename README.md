@@ -1,4 +1,10 @@
-IF YOU'RE READING THIS AS OF RIGHT NOW, THIS WON'T BE USEFULL TO YOU YET. 
+**companyDataProcess README.md**
+
+This program is designed to run on a database of securities prices and mostly uses adjusted closing prices. 
+
+Although this project is still a work in progress and does not yet use quadratic constrain optimization, it is able to create a visibile efficient frontier for back-testing for specified stocks between a certain date range. Although my own database is necessary for this code to work, the SQL in the database handle should allow you create a sample databse yourself. 
+
+My own data was additionally scraped from EDGAR but is not required for running the backtesting seen in the image bellow. 
 
 ![](https://i.imgur.com/9HN20NW.png)
 
@@ -8,31 +14,24 @@ If you're connected to the database...
 
 	shell> python Portfolio.py
 
-Still a work in progress. Unless you somehow have my database (which shouldn't be that hard for you to scrape on your own anyway), this probably won't be too usefull do you. If it is, feel free to do whatever you want with it. 
+If haven't written anything more than the example at the bottom of Portfolio.py, but if you want to include this in a live interperter, you can add any additional companeis if they are in your database. 
 
-This serves mostly as a framework that I'm going to try to do some stuff with later. I also needed a refresher on object oriented python. 
-
-I haven't added anything with a portfolio optimizer yet, but there's enough here to build of testing some test porftolio weights. You can make a plot where you could see an efficient frontier, but quadratic, convext, constraint optimization isn't implemented yet and I'm not sure if I feel like doing it right now. 
-
-Giddy up!
-
-**companyDataProcess README.md**
-
-*this garbage uses about a dozen libraries which include*
-cvxopt
+*this program makes use of a number of libraries, some of which you may have to compile from C source. Some of them include*
 talib
 pandas
 numpy
 matplotlib
 datetime
 sys
-some of my own...
+*Quadratic constaint optimization hasn't been implemented yet, but woudl use `cvxopt` which itself uses GNU's optimization under the hood*. 
+
 
 This documentation for processing the stock data and fundemental data that is already loaded into MySQL. 
 
 The MySQL database is called "CompanyData" and has two main important features: 
 	
 	1) Multiple tables for all stocks with columns: 
+	
 	  	ticker VARCHAR(10),
 		dateString VARCHAR(20),
 		open FLOAT, 
