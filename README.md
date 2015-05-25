@@ -1,8 +1,8 @@
 **companyDataProcess README.md**
 
-This program is designed to run on a database of securities prices and mostly uses adjusted closing prices. 
+This program is designed to run my own database of securities prices and mostly uses adjusted closing prices. 
 
-Although this project is still a work in progress and does not yet use quadratic constrain optimization, it is able to create a visibile efficient frontier for back-testing for specified stocks between a certain date range. Although my own database is necessary for this code to work, the SQL in the database handle should allow you create a sample databse yourself. 
+Although this project is still a work in progress and does not yet use quadratic constrain optimization, it is, however, still able to create a visibile efficient frontier for back-testing of specified stocks between a certain date range. Although my own database is necessary for this code to work, the SQL in the database handle should allow you create a sample databse yourself. 
 
 My own data was additionally scraped from EDGAR but is not required for running the backtesting seen in the image bellow. 
 
@@ -25,7 +25,7 @@ If haven't written anything more than the example at the bottom of Portfolio.py,
 	datetime
 	sys
 
-*Quadratic constaint optimization hasn't been implemented yet, but woudl use `cvxopt` which itself uses a GNU optimization library under the hood*. 
+*Quadratic constaint optimization hasn't been implemented yet, but woudl use `cvxopt` which itself uses a GNU optimization library under the hood.* 
 
 
 This documentation for processing the stock data and fundemental data that is already loaded into MySQL. 
