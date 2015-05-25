@@ -16,7 +16,7 @@ If you're connected to the database...
 
 If haven't written anything more than the example at the bottom of Portfolio.py, but if you want to include this in a live interperter, you can add any additional companeis if they are in your database. 
 
-*this program makes use of a number of libraries, some of which you may have to compile from C source. Some of them include*
+*This program makes use of a number of libraries, some of which you may have to compile from C source. Some of them include*
 
 	talib
 	pandas
