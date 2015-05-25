@@ -7,6 +7,7 @@ Although this project is still a work in progress and does not yet use quadratic
 My own data was additionally scraped from EDGAR but is not required for running the backtesting seen in the image bellow. 
 
 ![](https://i.imgur.com/9HN20NW.png)
+![](http://i.imgur.com/EmSCQgU.png)
 
 **OVERVIEW**
 
