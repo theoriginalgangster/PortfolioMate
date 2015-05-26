@@ -1,4 +1,4 @@
-**PortfolioMate**
+#PortfolioMate
 
 This program is designed to run my own database of securities prices and mostly uses adjusted closing prices. 
 
